@@ -133,8 +133,12 @@ ul li { margin-bottom: .35em; }
   flex-direction: column;
   line-height: 1.15;
 }
-.brand-zh { font-weight: 700; font-size: 16px; }
-.brand-en { font-family: var(--font-en); font-size: 11px; color: var(--c-text-muted); }
+.brand-zh { font-weight: 700; font-size: 16px; white-space: nowrap; }
+.brand-en { font-family: var(--font-en); font-size: 11px; color: var(--c-text-muted); white-space: nowrap; }
+
+/* 英文模式：brand-zh 已切成英文長字串，縮小字級並隱藏重複副標 */
+html[lang="en"] .brand-zh { font-size: 13px; font-weight: 600; }
+html[lang="en"] .brand-en { display: none; }
 
 .nav {
   display: flex;
@@ -314,8 +318,14 @@ ul li { margin-bottom: .35em; }
 /* ---------- Research grid ---------- */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media (max-width: 900px) {
+  .research-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .research-grid { grid-template-columns: 1fr; }
 }
 .research-card {
   background: #fff;

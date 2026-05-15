@@ -1,31 +1,32 @@
 /* =========================================================
-   NTU GICE Communication Group · main script
+   NTU GICE Communication and Signal Processing Group · main script
    ========================================================= */
 
-// ----------- 教授資料（順序依原網頁） -----------
-// 資料來源：https://gice.ntu.edu.tw/Professor_mygice.php?group=CSP (2026-05-05)
+// ----------- 教授資料 -----------
+// 資料來源：https://gice.ntu.edu.tw/Professor_mygice.php?group=CSP
+// 排序：特聘教授 → 教授 → 副教授 → 助理教授
 const FACULTY = [
   {
     nameZh: "陳宏銘", nameEn: "Homer H. Chen",
-    title: "教授", titleEn: "Professor",
+    title: "特聘教授", titleEn: "Distinguished Professor",
     email: "homer@ntu.edu.tw",
     research:   "多媒體信號處理、計算攝影及顯示技術、音樂資訊探勘",
     researchEn: "Multimedia Signal Processing, Computational Photography and Display Technology, Music Information Retrieval",
     office:   "博理館 423 室",       officeEn: "Barry Lam Hall, Rm. 423",
     lab:      "電機二館 533 室",     labLocEn: "EE Building No. 2, Rm. 533",
     photo: "images/homer.jpg",
-    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: ""
+    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942010&p=3"
   },
   {
     nameZh: "鐘嘉德", nameEn: "Char-Dir Chung",
-    title: "教授", titleEn: "Professor",
+    title: "特聘教授", titleEn: "Distinguished Professor",
     email: "cdchung@ntu.edu.tw",
     research:   "通訊系統及理論、無線通訊、展頻通訊",
     researchEn: "Communication Systems and Theory, Wireless Communications, Spread-Spectrum Communications",
     office:   "博理館 426 室",       officeEn: "Barry Lam Hall, Rm. 426",
     lab:      "博理館 518 室",       labLocEn: "Barry Lam Hall, Rm. 518",
     photo: "images/cdchung.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901162&p=3"
   },
   {
     nameZh: "馮世邁", nameEn: "See-May Phoong",
@@ -36,7 +37,7 @@ const FACULTY = [
     office:   "博理館 420 室",       officeEn: "Barry Lam Hall, Rm. 420",
     lab:      "博理館 506 室",       labLocEn: "Barry Lam Hall, Rm. 506",
     photo: "images/smphoong.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942001&p=3"
   },
   {
     nameZh: "蘇炫榮", nameEn: "Hsuan-Jung Su",
@@ -47,7 +48,7 @@ const FACULTY = [
     office:   "博理館 512 室",       officeEn: "Barry Lam Hall, Rm. 512",
     lab:      "電機二館 532 室",     labLocEn: "EE Building No. 2, Rm. 532",
     photo: "images/hjs.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942007&p=3"
   },
   {
     nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh",
@@ -58,7 +59,7 @@ const FACULTY = [
     office:   "電機二館 546 室",     officeEn: "EE Building No. 2, Rm. 546",
     lab:      "博理館 521 室",       labLocEn: "Barry Lam Hall, Rm. 521",
     photo: "images/hungyun.jpg",
-    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: ""
+    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942014&p=3"
   },
   {
     nameZh: "葉丙成", nameEn: "Ping-Cheng Yeh",
@@ -69,7 +70,7 @@ const FACULTY = [
     office:   "電機二館 248 室",     officeEn: "EE Building No. 2, Rm. 248",
     lab:      "博理館 515 室",       labLocEn: "Barry Lam Hall, Rm. 515",
     photo: "images/pcyeh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942016&p=3"
   },
   {
     nameZh: "丁建均", nameEn: "Jian-Jiun Ding",
@@ -91,7 +92,7 @@ const FACULTY = [
     office:   "明達館 524 室",       officeEn: "Ming-Da Building, Rm. 524",
     lab:      "學新館 515 室",       labLocEn: "學新館 515 室",
     photo: "images/ihwang.jpg",
-    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: ""
+    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=102002&p=3"
   },
   {
     nameZh: "林士駿", nameEn: "Shih-Chun Lin",
@@ -102,7 +103,7 @@ const FACULTY = [
     office:   "電機二館 447 室",     officeEn: "EE Building No. 2, Rm. 447",
     lab:      "博理館 524 室",       labLocEn: "Barry Lam Hall, Rm. 524",
     photo: "images/sclinntu.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=26171&p=3"
   },
   {
     nameZh: "周俊廷", nameEn: "Chun-Ting Chou",
@@ -113,7 +114,7 @@ const FACULTY = [
     office:   "明達館 618 室",       officeEn: "Ming-Da Building, Rm. 618",
     lab:      "電機二館 550 室",     labLocEn: "EE Building No. 2, Rm. 550",
     photo: "images/chuntingchou.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942021&p=3"
   },
   {
     nameZh: "蘇柏青", nameEn: "Borching Su",
@@ -124,7 +125,7 @@ const FACULTY = [
     office:   "明達館 516 室",       officeEn: "Ming-Da Building, Rm. 516",
     lab:      "明達館 530 室",       labLocEn: "Ming-Da Building, Rm. 530",
     photo: "images/borching.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901173&p=3"
   },
   {
     nameZh: "劉俊麟", nameEn: "Chun-Lin Liu",
@@ -135,7 +136,7 @@ const FACULTY = [
     office:   "明達館 515 室",       officeEn: "Ming-Da Building, Rm. 515",
     lab:      "電機二館 530 室",     labLocEn: "EE Building No. 2, Rm. 530",
     photo: "images/chunlinliu.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://homepage.ntu.edu.tw/~chunlinliu/"
   },
   {
     nameZh: "鄭皓中", nameEn: "Hao-Chung Cheng",
@@ -146,7 +147,7 @@ const FACULTY = [
     office:   "電機二館 549 室",     officeEn: "EE Building No. 2, Rm. 549",
     lab:      "學新館 513 室",       labLocEn: "學新館 513 室",
     photo: "images/haochung.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=25653&p=3"
   },
   {
     nameZh: "葉佳宜", nameEn: "Chia-Yi Yeh",
@@ -157,7 +158,7 @@ const FACULTY = [
     office:   "電機二館 335 室",     officeEn: "EE Building No. 2, Rm. 335",
     lab:      "電機二館 554 室",     labLocEn: "EE Building No. 2, Rm. 554",
     photo: "images/ycyyeh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "https://sites.google.com/view/chiayi-yeh/iwis-lab", homepage: "https://sites.google.com/view/chiayi-yeh"
   },
   {
     nameZh: "黃楚翔", nameEn: "Chu-Hsiang Huang",
@@ -168,7 +169,7 @@ const FACULTY = [
     office:   "電機二館 536 室",     officeEn: "EE Building No. 2, Rm. 536",
     lab:      "博理館 504 室",       labLocEn: "Barry Lam Hall, Rm. 504",
     photo: "images/chuhsianh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27754&p=3"
   },
   {
     nameZh: "王新博", nameEn: "Hsin-Po Wang",
@@ -179,7 +180,7 @@ const FACULTY = [
     office:   "電機二館 237 室",     officeEn: "EE Building No. 2, Rm. 237",
     lab:      "博理館 508 室",       labLocEn: "Barry Lam Hall, Rm. 508",
     photo: "images/hsinpo.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27626&p=3"
   }
 ];
 
