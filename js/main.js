@@ -81,7 +81,7 @@ const FACULTY = [
     office:   "明達館 723 室",       officeEn: "Ming-Da Building, Rm. 723",
     lab:      "明達館 531 室",       labLocEn: "Ming-Da Building, Rm. 531",
     photo: "images/jjding.jpg",
-    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://djj.ee.ntu.edu.tw/"
+    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942019&p=3"
   },
   {
     nameZh: "王奕翔", nameEn: "I-Hsiang Wang",
