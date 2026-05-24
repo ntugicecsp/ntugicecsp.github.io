@@ -15,7 +15,8 @@ const FACULTY = [
     office:   "博理館 423 室",       officeEn: "Barry Lam Hall, Rm. 423",
     lab:      "電機二館 533 室",     labLocEn: "EE Building No. 2, Rm. 533",
     photo: "images/homer.jpg",
-    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942010&p=3"
+    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942010&p=3",
+    project: "https://www.notion.so/ntueesaad/60140d74d29e427882b3e24bab5e783a"
   },
   {
     nameZh: "鐘嘉德", nameEn: "Char-Dir Chung",
@@ -48,7 +49,8 @@ const FACULTY = [
     office:   "博理館 512 室",       officeEn: "Barry Lam Hall, Rm. 512",
     lab:      "電機二館 532 室",     labLocEn: "EE Building No. 2, Rm. 532",
     photo: "images/hjs.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942007&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942007&p=3",
+    project: "https://www.notion.so/ntueesaad/5fa36c76600343ed95014f2e5a36e3af"
   },
   {
     nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh",
@@ -59,7 +61,8 @@ const FACULTY = [
     office:   "電機二館 546 室",     officeEn: "EE Building No. 2, Rm. 546",
     lab:      "博理館 521 室",       labLocEn: "Barry Lam Hall, Rm. 521",
     photo: "images/hungyun.jpg",
-    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942014&p=3"
+    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942014&p=3",
+    project: "https://www.notion.so/ntueesaad/c166e536e30344c1b19de09915fec012"
   },
   {
     nameZh: "葉丙成", nameEn: "Ping-Cheng Yeh",
@@ -70,7 +73,8 @@ const FACULTY = [
     office:   "電機二館 248 室",     officeEn: "EE Building No. 2, Rm. 248",
     lab:      "博理館 515 室",       labLocEn: "Barry Lam Hall, Rm. 515",
     photo: "images/pcyeh.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942016&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942016&p=3",
+    project: "https://www.notion.so/ntueesaad/8ce5a7fa8f9d4abab1b445e3cfbfd5c1"
   },
   {
     nameZh: "丁建均", nameEn: "Jian-Jiun Ding",
@@ -81,7 +85,8 @@ const FACULTY = [
     office:   "明達館 723 室",       officeEn: "Ming-Da Building, Rm. 723",
     lab:      "明達館 531 室",       labLocEn: "Ming-Da Building, Rm. 531",
     photo: "images/jjding.jpg",
-    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942019&p=3"
+    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942019&p=3",
+    project: "https://www.notion.so/ntueesaad/f6a1ae66c6e24fb6b0dea3c90091da3a"
   },
   {
     nameZh: "王奕翔", nameEn: "I-Hsiang Wang",
@@ -92,7 +97,8 @@ const FACULTY = [
     office:   "明達館 524 室",       officeEn: "Ming-Da Building, Rm. 524",
     lab:      "學新館 515 室",       labLocEn: "學新館 515 室",
     photo: "images/ihwang.jpg",
-    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=102002&p=3"
+    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=102002&p=3",
+    project: "https://www.notion.so/ntueesaad/4653c283b53445889a849e1e1f3837b5"
   },
   {
     nameZh: "林士駿", nameEn: "Shih-Chun Lin",
@@ -103,7 +109,8 @@ const FACULTY = [
     office:   "電機二館 447 室",     officeEn: "EE Building No. 2, Rm. 447",
     lab:      "博理館 524 室",       labLocEn: "Barry Lam Hall, Rm. 524",
     photo: "images/sclinntu.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=26171&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=26171&p=3",
+    project: "https://www.notion.so/ntueesaad/22f9f37be3b94d23873c0a6481c6ae16"
   },
   {
     nameZh: "周俊廷", nameEn: "Chun-Ting Chou",
@@ -136,7 +143,8 @@ const FACULTY = [
     office:   "明達館 515 室",       officeEn: "Ming-Da Building, Rm. 515",
     lab:      "電機二館 530 室",     labLocEn: "EE Building No. 2, Rm. 530",
     photo: "images/chunlinliu.jpg",
-    labUrl: "", homepage: "https://homepage.ntu.edu.tw/~chunlinliu/"
+    labUrl: "", homepage: "https://homepage.ntu.edu.tw/~chunlinliu/",
+    project: "https://www.notion.so/ntueesaad/1df54a253c344791b9e5fdced82a81aa"
   },
   {
     nameZh: "鄭皓中", nameEn: "Hao-Chung Cheng",
@@ -147,7 +155,8 @@ const FACULTY = [
     office:   "電機二館 549 室",     officeEn: "EE Building No. 2, Rm. 549",
     lab:      "學新館 513 室",       labLocEn: "學新館 513 室",
     photo: "images/haochung.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=25653&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=25653&p=3",
+    project: "https://www.notion.so/ntueesaad/31a603b969164fc58f88f80812f68d2c"
   },
   {
     nameZh: "葉佳宜", nameEn: "Chia-Yi Yeh",
@@ -158,7 +167,8 @@ const FACULTY = [
     office:   "電機二館 335 室",     officeEn: "EE Building No. 2, Rm. 335",
     lab:      "電機二館 554 室",     labLocEn: "EE Building No. 2, Rm. 554",
     photo: "images/ycyyeh.jpg",
-    labUrl: "https://sites.google.com/view/chiayi-yeh/iwis-lab", homepage: "https://sites.google.com/view/chiayi-yeh"
+    labUrl: "https://sites.google.com/view/chiayi-yeh/iwis-lab", homepage: "https://sites.google.com/view/chiayi-yeh",
+    project: "https://www.notion.so/ntueesaad/59bbbe48a3e84197bf4428488def61de"
   },
   {
     nameZh: "黃楚翔", nameEn: "Chu-Hsiang Huang",
@@ -169,7 +179,8 @@ const FACULTY = [
     office:   "電機二館 536 室",     officeEn: "EE Building No. 2, Rm. 536",
     lab:      "博理館 504 室",       labLocEn: "Barry Lam Hall, Rm. 504",
     photo: "images/chuhsianh.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27754&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27754&p=3",
+    project: "https://www.notion.so/ntueesaad/8845eaf89c8440cb9cbcad4434f7256b"
   },
   {
     nameZh: "王新博", nameEn: "Hsin-Po Wang",
@@ -180,7 +191,8 @@ const FACULTY = [
     office:   "電機二館 237 室",     officeEn: "EE Building No. 2, Rm. 237",
     lab:      "博理館 508 室",       labLocEn: "Barry Lam Hall, Rm. 508",
     photo: "images/hsinpo.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27626&p=3"
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27626&p=3",
+    project: "https://www.notion.so/ntueesaad/2e10d0912cad8001bc90e24e9c408430"
   }
 ];
 
@@ -191,7 +203,8 @@ const ICON = {
   mail: '<svg class="faculty-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
   arrow: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
   globe: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
-  flask: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 3H6.8A2 2 0 0 1 5 17l4-9V3z"/><path d="M8 14h8"/></svg>'
+  flask: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 3H6.8A2 2 0 0 1 5 17l4-9V3z"/><path d="M8 14h8"/></svg>',
+  book: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a2 2 0 0 1 2-2h12v18H6a2 2 0 0 0-2 2V4z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H18"/></svg>'
 };
 
 // ---------- 當前語言 ----------
@@ -205,6 +218,7 @@ function renderFaculty() {
 
   const labelLab     = en ? "Lab Website" : "實驗室網頁";
   const labelHome    = en ? "Personal Website" : "個人網頁";
+  const labelProj    = en ? "Capstone Project" : "專題";
   const labelOffice  = en ? "Office: " : "Office：";
   const labelLabLoc  = en ? "Lab: " : "Lab：";
 
@@ -219,6 +233,7 @@ function renderFaculty() {
     const links = [];
     if (p.labUrl)   links.push(`<a class="faculty-link-btn" href="${p.labUrl}" target="_blank" rel="noopener">${ICON.flask}<span>${labelLab}</span>${ICON.arrow}</a>`);
     if (p.homepage) links.push(`<a class="faculty-link-btn" href="${p.homepage}" target="_blank" rel="noopener">${ICON.globe}<span>${labelHome}</span>${ICON.arrow}</a>`);
+    if (p.project)  links.push(`<a class="faculty-link-btn faculty-link-project" href="${p.project}" target="_blank" rel="noopener">${ICON.book}<span>${labelProj}</span>${ICON.arrow}</a>`);
     const linksBlock = links.length ? `<div class="faculty-links">${links.join("")}</div>` : "";
 
     const officeText = en ? p.officeEn : p.office;
