@@ -7,18 +7,6 @@
 // 排序：特聘教授 → 教授 → 副教授 → 助理教授
 const FACULTY = [
   {
-    nameZh: "陳宏銘", nameEn: "Homer H. Chen",
-    title: "特聘教授", titleEn: "Distinguished Professor",
-    email: "homer@ntu.edu.tw",
-    research:   "多媒體信號處理、計算攝影及顯示技術、音樂資訊探勘",
-    researchEn: "Multimedia Signal Processing, Computational Photography and Display Technology, Music Information Retrieval",
-    office:   "博理館 423 室",       officeEn: "Barry Lam Hall, Rm. 423",
-    lab:      "電機二館 533 室",     labLocEn: "EE Building No. 2, Rm. 533",
-    photo: "images/homer.jpg",
-    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942010&p=3",
-    project: "https://www.notion.so/ntueesaad/60140d74d29e427882b3e24bab5e783a"
-  },
-  {
     nameZh: "鐘嘉德", nameEn: "Char-Dir Chung",
     title: "特聘教授", titleEn: "Distinguished Professor",
     email: "cdchung@ntu.edu.tw",
