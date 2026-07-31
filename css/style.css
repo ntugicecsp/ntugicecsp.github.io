@@ -133,12 +133,8 @@ ul li { margin-bottom: .35em; }
   flex-direction: column;
   line-height: 1.15;
 }
-.brand-zh { font-weight: 700; font-size: 16px; white-space: nowrap; }
-.brand-en { font-family: var(--font-en); font-size: 11px; color: var(--c-text-muted); white-space: nowrap; }
-
-/* 英文模式：brand-zh 已切成英文長字串，縮小字級並隱藏重複副標 */
-html[lang="en"] .brand-zh { font-size: 13px; font-weight: 600; }
-html[lang="en"] .brand-en { display: none; }
+.brand-zh { font-weight: 700; font-size: 16px; }
+.brand-en { font-family: var(--font-en); font-size: 11px; color: var(--c-text-muted); }
 
 .nav {
   display: flex;
@@ -318,14 +314,8 @@ html[lang="en"] .brand-en { display: none; }
 /* ---------- Research grid ---------- */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-}
-@media (max-width: 900px) {
-  .research-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 560px) {
-  .research-grid { grid-template-columns: 1fr; }
 }
 .research-card {
   background: #fff;
@@ -503,51 +493,6 @@ html[lang="en"] .brand-en { display: none; }
 .faculty-link-btn svg { transition: transform .2s; }
 .faculty-link-btn:hover svg:last-child { transform: translateX(2px); }
 
-/* ---------- Courses ---------- */
-.course-block {
-  margin-bottom: 48px;
-}
-.course-block:last-of-type {
-  margin-bottom: 24px;
-}
-.course-subtitle {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--c-primary);
-  margin: 0 0 20px;
-  padding-left: 14px;
-  border-left: 4px solid var(--c-accent);
-}
-.course-figure {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto 20px;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  border: 1px solid var(--c-border);
-  box-shadow: var(--shadow-sm);
-  background: #fff;
-  transition: transform .25s, box-shadow .25s;
-}
-.course-figure:last-child { margin-bottom: 0; }
-.course-figure:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-.course-figure img {
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-.course-hint {
-  text-align: center;
-  font-size: 13px;
-  color: var(--c-text-light);
-  margin: 0;
-}
-
 /* ---------- Q&A ---------- */
 .qa-list {
   display: flex;
@@ -702,7 +647,6 @@ html[lang="en"] .brand-en { display: none; }
 .research-grid .reveal:nth-child(5).is-visible { transition-delay: .24s; }
 .research-grid .reveal:nth-child(6).is-visible { transition-delay: .30s; }
 .research-grid .reveal:nth-child(7).is-visible { transition-delay: .36s; }
-.research-grid .reveal:nth-child(8).is-visible { transition-delay: .42s; }
 
 .faculty-grid .reveal { transition-duration: .55s; }
 .faculty-grid .reveal:nth-child(odd).is-visible { transition-delay: .04s; }
