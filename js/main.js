@@ -38,7 +38,7 @@ const FACULTY = [
     lab:      "電機二館 532 室",     labLocEn: "EE Building No. 2, Rm. 532",
     photo: "images/hjs.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942007&p=3",
-    project: "https://www.notion.so/ntueesaad/5fa36c76600343ed95014f2e5a36e3af"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=51a0d0912cad82858fa7014c3d954ae4&pm=s"
   },
   {
     nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh",
@@ -50,7 +50,7 @@ const FACULTY = [
     lab:      "博理館 521 室",       labLocEn: "Barry Lam Hall, Rm. 521",
     photo: "images/hungyun.jpg",
     labUrl: "http://tonic.ee.ntu.edu.tw", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942014&p=3",
-    project: "https://www.notion.so/ntueesaad/c166e536e30344c1b19de09915fec012"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=c5b0d0912cad8354a33d0161d07edc5a&pm=s"
   },
   {
     nameZh: "葉丙成", nameEn: "Ping-Cheng Yeh",
@@ -62,7 +62,7 @@ const FACULTY = [
     lab:      "博理館 515 室",       labLocEn: "Barry Lam Hall, Rm. 515",
     photo: "images/pcyeh.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942016&p=3",
-    project: "https://www.notion.so/ntueesaad/8ce5a7fa8f9d4abab1b445e3cfbfd5c1"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=8040d0912cad837cbf32019352c03508&pm=s"
   },
   {
     nameZh: "丁建均", nameEn: "Jian-Jiun Ding",
@@ -86,7 +86,7 @@ const FACULTY = [
     lab:      "學新館 515 室",       labLocEn: "學新館 515 室",
     photo: "images/ihwang.jpg",
     labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=102002&p=3",
-    project: "https://www.notion.so/ntueesaad/4653c283b53445889a849e1e1f3837b5"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=f2b0d0912cad833ca8a30164dd635394&pm=s"
   },
   {
     nameZh: "林士駿", nameEn: "Shih-Chun Lin",
@@ -98,7 +98,7 @@ const FACULTY = [
     lab:      "博理館 524 室",       labLocEn: "Barry Lam Hall, Rm. 524",
     photo: "images/sclinntu.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=26171&p=3",
-    project: "https://www.notion.so/ntueesaad/22f9f37be3b94d23873c0a6481c6ae16"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=6f30d0912cad822c872a0152cd5c7f0b&pm=s"
   },
   {
     nameZh: "周俊廷", nameEn: "Chun-Ting Chou",
@@ -132,7 +132,7 @@ const FACULTY = [
     lab:      "電機二館 530 室",     labLocEn: "EE Building No. 2, Rm. 530",
     photo: "images/chunlinliu.jpg",
     labUrl: "", homepage: "https://homepage.ntu.edu.tw/~chunlinliu/",
-    project: "https://www.notion.so/ntueesaad/1df54a253c344791b9e5fdced82a81aa"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=ddf0d0912cad836e8bd90131b70a0ac7&pm=s"
   },
   {
     nameZh: "鄭皓中", nameEn: "Hao-Chung Cheng",
@@ -144,7 +144,7 @@ const FACULTY = [
     lab:      "學新館 513 室",       labLocEn: "學新館 513 室",
     photo: "images/haochung.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=25653&p=3",
-    project: "https://www.notion.so/ntueesaad/31a603b969164fc58f88f80812f68d2c"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=7ff0d0912cad83d4bc1681988ff7926a&pm=s"
   },
   {
     nameZh: "葉佳宜", nameEn: "Chia-Yi Yeh",
@@ -156,7 +156,7 @@ const FACULTY = [
     lab:      "電機二館 554 室",     labLocEn: "EE Building No. 2, Rm. 554",
     photo: "images/ycyyeh.jpg",
     labUrl: "https://sites.google.com/view/chiayi-yeh/iwis-lab", homepage: "https://sites.google.com/view/chiayi-yeh",
-    project: "https://www.notion.so/ntueesaad/59bbbe48a3e84197bf4428488def61de"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=8070d0912cad8352915401b5759afd4b&pm=s"
   },
   {
     nameZh: "黃楚翔", nameEn: "Chu-Hsiang Huang",
@@ -168,7 +168,7 @@ const FACULTY = [
     lab:      "博理館 504 室",       labLocEn: "Barry Lam Hall, Rm. 504",
     photo: "images/chuhsianh.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27754&p=3",
-    project: "https://www.notion.so/ntueesaad/8845eaf89c8440cb9cbcad4434f7256b"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=7710d0912cad83ae9965015bacf7e2bd&pm=s"
   },
   {
     nameZh: "王新博", nameEn: "Hsin-Po Wang",
@@ -180,7 +180,7 @@ const FACULTY = [
     lab:      "博理館 508 室",       labLocEn: "Barry Lam Hall, Rm. 508",
     photo: "images/hsinpo.jpg",
     labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27626&p=3",
-    project: "https://www.notion.so/ntueesaad/2e10d0912cad8001bc90e24e9c408430"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=3f90d0912cad8286bf2e0194e97ef719&pm=s"
   }
 ];
 
