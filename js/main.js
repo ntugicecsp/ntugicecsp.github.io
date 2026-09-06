@@ -1,130 +1,198 @@
 /* =========================================================
-   NTU GICE Communication Group · main script
+   NTU GICE Communication and Signal Processing Group · main script
    ========================================================= */
 
-// ----------- 教授資料（順序依原網頁） -----------
-// 資料來源：https://gice.ntu.edu.tw/Professor_mygice.php?group=CSP (2026-05-05)
-// 註：電話統一不顯示；缺漏欄位請至各 lab 自行確認後填入。
+// ----------- 教授資料 -----------
+// 資料來源：https://gice.ntu.edu.tw/Professor_mygice.php?group=CSP
+// 排序：特聘教授 → 教授 → 副教授 → 助理教授
 const FACULTY = [
   {
-    nameZh: "鐘嘉德", nameEn: "Char-Dir Chung", title: "教授",
+    nameZh: "陳宏銘", nameEn: "Homer H. Chen",
+    title: "特聘教授", titleEn: "Distinguished Professor",
+    email: "homer@ntu.edu.tw",
+    research:   "多媒體信號處理、計算攝影及顯示技術、音樂資訊探勘",
+    researchEn: "Multimedia Signal Processing, Computational Photography and Display Technology, Music Information Retrieval",
+    office:   "博理館 423 室",       officeEn: "Barry Lam Hall, Rm. 423",
+    lab:      "電機二館 533 室",     labLocEn: "EE Building No. 2, Rm. 533",
+    photo: "images/homer.jpg",
+    labUrl: "http://mpac.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942010&p=3",
+    project: "https://www.notion.so/ntueesaad/60140d74d29e427882b3e24bab5e783a"
+  },
+  {
+    nameZh: "鐘嘉德", nameEn: "Char-Dir Chung",
+    title: "特聘教授", titleEn: "Distinguished Professor",
     email: "cdchung@ntu.edu.tw",
-    research: "通訊系統及理論、無線通訊、展頻通訊",
-    office: "博理館 426 室", lab: "博理館 518 室",
+    research:   "通訊系統及理論、無線通訊、展頻通訊",
+    researchEn: "Communication Systems and Theory, Wireless Communications, Spread-Spectrum Communications",
+    office:   "博理館 426 室",       officeEn: "Barry Lam Hall, Rm. 426",
+    lab:      "博理館 518 室",       labLocEn: "Barry Lam Hall, Rm. 518",
     photo: "images/cdchung.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901162&p=3"
   },
   {
-    nameZh: "馮世邁", nameEn: "See-May Phoong", title: "教授",
+    nameZh: "馮世邁", nameEn: "See-May Phoong",
+    title: "教授", titleEn: "Professor",
     email: "smphoong@ntu.edu.tw",
-    research: "同步與估測、多載波通信系統、通信之訊號處理",
-    office: "博理館 420 室", lab: "博理館 506 室",
+    research:   "同步與估測、多載波通信系統、通信之訊號處理",
+    researchEn: "Synchronization and Estimation, Multi-carrier Communication Systems, Signal Processing for Communications",
+    office:   "博理館 420 室",       officeEn: "Barry Lam Hall, Rm. 420",
+    lab:      "博理館 506 室",       labLocEn: "Barry Lam Hall, Rm. 506",
     photo: "images/smphoong.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942001&p=3"
   },
   {
-    nameZh: "蘇炫榮", nameEn: "Hsuan-Jung Su", title: "教授",
+    nameZh: "蘇炫榮", nameEn: "Hsuan-Jung Su",
+    title: "教授", titleEn: "Professor",
     email: "hjs@ntu.edu.tw",
-    research: "編碼、調變、訊號處理",
-    office: "博理館 512 室", lab: "電機二館 532 室",
+    research:   "編碼、調變、訊號處理",
+    researchEn: "Coding, Modulation, Signal Processing",
+    office:   "博理館 512 室",       officeEn: "Barry Lam Hall, Rm. 512",
+    lab:      "電機二館 532 室",     labLocEn: "EE Building No. 2, Rm. 532",
     photo: "images/hjs.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942007&p=3",
+    project: "https://www.notion.so/ntueesaad/5fa36c76600343ed95014f2e5a36e3af"
   },
   {
-    nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh", title: "教授",
+    nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh",
+    title: "教授", titleEn: "Professor",
     email: "hungyun@ntu.edu.tw",
-    research: "物聯網、車載通訊網路、網路科學與資訊安全",
-    office: "電機二館 546 室", lab: "博理館 521 室",
+    research:   "物聯網、車載通訊網路、網路科學與資訊安全",
+    researchEn: "Internet of Things, Vehicular Communication Networks, Network Science and Information Security",
+    office:   "電機二館 546 室",     officeEn: "EE Building No. 2, Rm. 546",
+    lab:      "博理館 521 室",       labLocEn: "Barry Lam Hall, Rm. 521",
     photo: "images/hungyun.jpg",
-    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: ""
+    labUrl: "http://tonic.ee.ntu.edu.tw", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942014&p=3",
+    project: "https://www.notion.so/ntueesaad/c166e536e30344c1b19de09915fec012"
   },
   {
-    nameZh: "葉丙成", nameEn: "Ping-Cheng Yeh", title: "教授",
+    nameZh: "葉丙成", nameEn: "Ping-Cheng Yeh",
+    title: "教授", titleEn: "Professor",
     email: "pcyeh@ntu.edu.tw",
-    research: "無線通訊、無線網路",
-    office: "電機二館 248 室", lab: "博理館 515 室",
+    research:   "無線通訊、無線網路",
+    researchEn: "Wireless Communications, Wireless Networks",
+    office:   "電機二館 248 室",     officeEn: "EE Building No. 2, Rm. 248",
+    lab:      "博理館 515 室",       labLocEn: "Barry Lam Hall, Rm. 515",
     photo: "images/pcyeh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942016&p=3",
+    project: "https://www.notion.so/ntueesaad/8ce5a7fa8f9d4abab1b445e3cfbfd5c1"
   },
   {
-    nameZh: "丁建均", nameEn: "Jian-Jiun Ding", title: "教授",
+    nameZh: "丁建均", nameEn: "Jian-Jiun Ding",
+    title: "教授", titleEn: "Professor",
     email: "jjding@ntu.edu.tw",
-    research: "數位信號處理、數位影像處理",
-    office: "明達館 723 室", lab: "明達館 531 室",
+    research:   "數位信號處理、數位影像處理",
+    researchEn: "Digital Signal Processing, Digital Image Processing",
+    office:   "明達館 723 室",       officeEn: "Ming-Da Building, Rm. 723",
+    lab:      "明達館 531 室",       labLocEn: "Ming-Da Building, Rm. 531",
     photo: "images/jjding.jpg",
-    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://djj.ee.ntu.edu.tw/"
+    labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942019&p=3",
+    project: "https://www.notion.so/ntueesaad/f6a1ae66c6e24fb6b0dea3c90091da3a"
   },
   {
-    nameZh: "周俊廷", nameEn: "Chun-Ting Chou", title: "副教授",
-    email: "chuntingchou@ntu.edu.tw",
-    research: "無線網路通訊協定、超高速個人無線區域網路、認知型智慧無線網路",
-    office: "明達館 618 室", lab: "電機二館 550 室",
-    photo: "images/chuntingchou.jpg",
-    labUrl: "", homepage: ""
-  },
-  {
-    nameZh: "蘇柏青", nameEn: "Borching Su", title: "副教授",
-    email: "borching@ntu.edu.tw",
-    research: "通訊系統之信號處理",
-    office: "明達館 516 室", lab: "明達館 530 室",
-    photo: "images/borching.jpg",
-    labUrl: "", homepage: ""
-  },
-  {
-    nameZh: "王奕翔", nameEn: "I-Hsiang Wang", title: "教授",
+    nameZh: "王奕翔", nameEn: "I-Hsiang Wang",
+    title: "教授", titleEn: "Professor",
     email: "ihwang@ntu.edu.tw",
-    research: "消息理論、無線通訊、網路資訊與資料處理",
-    office: "明達館 524 室", lab: "學新館 515 室",
+    research:   "消息理論、無線通訊、網路資訊與資料處理",
+    researchEn: "Information Theory, Wireless Communications, Network Information and Data Processing",
+    office:   "明達館 524 室",       officeEn: "Ming-Da Building, Rm. 524",
+    lab:      "學新館 515 室",       labLocEn: "學新館 515 室",
     photo: "images/ihwang.jpg",
-    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: ""
+    labUrl: "http://cc.ee.ntu.edu.tw/~ihsiangw/NICLab/NIC.html", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=102002&p=3",
+    project: "https://www.notion.so/ntueesaad/4653c283b53445889a849e1e1f3837b5"
   },
   {
-    nameZh: "林士駿", nameEn: "Shih-Chun Lin", title: "教授",
+    nameZh: "林士駿", nameEn: "Shih-Chun Lin",
+    title: "教授", titleEn: "Professor",
     email: "sclinntu@ntu.edu.tw",
-    research: "消息理論、編碼、人工智慧物聯網資安",
-    office: "電機二館 447 室", lab: "博理館 524 室",
+    research:   "消息理論、編碼、人工智慧物聯網資安",
+    researchEn: "Information Theory, Coding, AIoT Security",
+    office:   "電機二館 447 室",     officeEn: "EE Building No. 2, Rm. 447",
+    lab:      "博理館 524 室",       labLocEn: "Barry Lam Hall, Rm. 524",
     photo: "images/sclinntu.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=26171&p=3",
+    project: "https://www.notion.so/ntueesaad/22f9f37be3b94d23873c0a6481c6ae16"
   },
   {
-    nameZh: "劉俊麟", nameEn: "Chun-Lin Liu", title: "副教授",
+    nameZh: "周俊廷", nameEn: "Chun-Ting Chou",
+    title: "副教授", titleEn: "Associate Professor",
+    email: "chuntingchou@ntu.edu.tw",
+    research:   "無線網路通訊協定、超高速個人無線區域網路、認知型智慧無線網路",
+    researchEn: "Wireless Network Communication Protocols, Ultra-High-Speed Personal Wireless LAN, Cognitive Intelligent Wireless Networks",
+    office:   "明達館 618 室",       officeEn: "Ming-Da Building, Rm. 618",
+    lab:      "電機二館 550 室",     labLocEn: "EE Building No. 2, Rm. 550",
+    photo: "images/chuntingchou.jpg",
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942021&p=3"
+  },
+  {
+    nameZh: "蘇柏青", nameEn: "Borching Su",
+    title: "副教授", titleEn: "Associate Professor",
+    email: "borching@ntu.edu.tw",
+    research:   "通訊系統之信號處理",
+    researchEn: "Signal Processing for Communication Systems",
+    office:   "明達館 516 室",       officeEn: "Ming-Da Building, Rm. 516",
+    lab:      "明達館 530 室",       labLocEn: "Ming-Da Building, Rm. 530",
+    photo: "images/borching.jpg",
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901173&p=3"
+  },
+  {
+    nameZh: "劉俊麟", nameEn: "Chun-Lin Liu",
+    title: "副教授", titleEn: "Associate Professor",
     email: "chunlinliu@ntu.edu.tw",
-    research: "稀疏陣列、陣列訊號處理、數位訊號處理、統計訊號處理",
-    office: "明達館 515 室", lab: "電機二館 530 室",
+    research:   "稀疏陣列、陣列訊號處理、數位訊號處理、統計訊號處理",
+    researchEn: "Sparse Arrays, Array Signal Processing, Digital Signal Processing, Statistical Signal Processing",
+    office:   "明達館 515 室",       officeEn: "Ming-Da Building, Rm. 515",
+    lab:      "電機二館 530 室",     labLocEn: "EE Building No. 2, Rm. 530",
     photo: "images/chunlinliu.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://homepage.ntu.edu.tw/~chunlinliu/",
+    project: "https://www.notion.so/ntueesaad/1df54a253c344791b9e5fdced82a81aa"
   },
   {
-    nameZh: "鄭皓中", nameEn: "Hao-Chung Cheng", title: "副教授",
+    nameZh: "鄭皓中", nameEn: "Hao-Chung Cheng",
+    title: "副教授", titleEn: "Associate Professor",
     email: "haochung@ntu.edu.tw",
-    research: "量子資訊處理、量子通訊、量子機器學習",
-    office: "電機二館 549 室", lab: "學新館 513 室",
+    research:   "量子資訊處理、量子通訊、量子機器學習",
+    researchEn: "Quantum Information Processing, Quantum Communications, Quantum Machine Learning",
+    office:   "電機二館 549 室",     officeEn: "EE Building No. 2, Rm. 549",
+    lab:      "學新館 513 室",       labLocEn: "學新館 513 室",
     photo: "images/haochung.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=25653&p=3",
+    project: "https://www.notion.so/ntueesaad/31a603b969164fc58f88f80812f68d2c"
   },
   {
-    nameZh: "葉佳宜", nameEn: "Chia-Yi Yeh", title: "助理教授",
+    nameZh: "葉佳宜", nameEn: "Chia-Yi Yeh",
+    title: "助理教授", titleEn: "Assistant Professor",
     email: "ycyyeh@ntu.edu.tw",
-    research: "無線通訊網路、毫米波、太赫茲、大規模天線陣列、無線通訊安全議題、無線感測",
-    office: "電機二館 335 室", lab: "電機二館 554 室",
+    research:   "無線通訊網路、毫米波、太赫茲、大規模天線陣列、無線通訊安全議題、無線感測",
+    researchEn: "Wireless Communication Networks, Millimeter Wave, Terahertz, Large-Scale Antenna Arrays, Wireless Communication Security, Wireless Sensing",
+    office:   "電機二館 335 室",     officeEn: "EE Building No. 2, Rm. 335",
+    lab:      "電機二館 554 室",     labLocEn: "EE Building No. 2, Rm. 554",
     photo: "images/ycyyeh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "https://sites.google.com/view/chiayi-yeh/iwis-lab", homepage: "https://sites.google.com/view/chiayi-yeh",
+    project: "https://www.notion.so/ntueesaad/59bbbe48a3e84197bf4428488def61de"
   },
   {
-    nameZh: "黃楚翔", nameEn: "Chu-Hsiang Huang", title: "助理教授",
+    nameZh: "黃楚翔", nameEn: "Chu-Hsiang Huang",
+    title: "助理教授", titleEn: "Assistant Professor",
     email: "chuhsianh@ntu.edu.tw",
-    research: "新世代無線通訊系統設計、通訊系統標準化、人工智慧與機器學習、統計通信理論",
-    office: "電機二館 536 室", lab: "博理館 504 室",
+    research:   "新世代無線通訊系統設計、通訊系統標準化、人工智慧與機器學習、統計通信理論",
+    researchEn: "Next-Generation Wireless Communication System Design, Communication System Standardization, Artificial Intelligence and Machine Learning, Statistical Communication Theory",
+    office:   "電機二館 536 室",     officeEn: "EE Building No. 2, Rm. 536",
+    lab:      "博理館 504 室",       labLocEn: "Barry Lam Hall, Rm. 504",
     photo: "images/chuhsianh.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27754&p=3",
+    project: "https://www.notion.so/ntueesaad/8845eaf89c8440cb9cbcad4434f7256b"
   },
   {
-    nameZh: "王新博", nameEn: "Hsin-Po Wang", title: "助理教授",
+    nameZh: "王新博", nameEn: "Hsin-Po Wang",
+    title: "助理教授", titleEn: "Assistant Professor",
     email: "hsinpo@ntu.edu.tw",
-    research: "編碼學、夏農理論、極化碼",
-    office: "電機二館 237 室", lab: "博理館 508 室",
+    research:   "編碼學、夏農理論、極化碼",
+    researchEn: "Coding Theory, Shannon Theory, Polar Codes",
+    office:   "電機二館 237 室",     officeEn: "EE Building No. 2, Rm. 237",
+    lab:      "博理館 508 室",       labLocEn: "Barry Lam Hall, Rm. 508",
     photo: "images/hsinpo.jpg",
-    labUrl: "", homepage: ""
+    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=27626&p=3",
+    project: "https://www.notion.so/ntueesaad/2e10d0912cad8001bc90e24e9c408430"
   }
 ];
 
@@ -135,43 +203,62 @@ const ICON = {
   mail: '<svg class="faculty-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
   arrow: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
   globe: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
-  flask: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 3H6.8A2 2 0 0 1 5 17l4-9V3z"/><path d="M8 14h8"/></svg>'
+  flask: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v5l4 9a2 2 0 0 1-1.8 3H6.8A2 2 0 0 1 5 17l4-9V3z"/><path d="M8 14h8"/></svg>',
+  book: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a2 2 0 0 1 2-2h12v18H6a2 2 0 0 0-2 2V4z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H18"/></svg>'
 };
+
+// ---------- 當前語言 ----------
+let currentLang = "zh"; // "zh" | "en"
 
 // ---------- Render faculty cards ----------
 function renderFaculty() {
   const grid = document.getElementById("facultyGrid");
   if (!grid) return;
+  const en = currentLang === "en";
+
+  const labelLab     = en ? "Lab Website" : "實驗室網頁";
+  const labelHome    = en ? "Personal Website" : "個人網頁";
+  const labelProj    = en ? "Capstone Project" : "專題";
+  const labelOffice  = en ? "Office: " : "Office：";
+  const labelLabLoc  = en ? "Lab: " : "Lab：";
 
   const html = FACULTY.map(p => {
     const initials = p.nameEn.split(" ").map(s => s[0]).slice(0,2).join("").toUpperCase();
     const photoBlock = p.photo
-      ? `<img class="faculty-photo" src="${p.photo}" alt="${p.nameZh} 教授照片" loading="lazy"
+      ? `<img class="faculty-photo" src="${p.photo}" alt="${p.nameEn}" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
          <div class="faculty-photo-fallback" style="display:none">${initials}</div>`
       : `<div class="faculty-photo-fallback" style="display:flex">${initials}</div>`;
 
     const links = [];
-    if (p.labUrl)   links.push(`<a class="faculty-link-btn" href="${p.labUrl}" target="_blank" rel="noopener">${ICON.flask}<span>實驗室網頁</span>${ICON.arrow}</a>`);
-    if (p.homepage) links.push(`<a class="faculty-link-btn" href="${p.homepage}" target="_blank" rel="noopener">${ICON.globe}<span>個人網頁</span>${ICON.arrow}</a>`);
+    if (p.labUrl)   links.push(`<a class="faculty-link-btn" href="${p.labUrl}" target="_blank" rel="noopener">${ICON.flask}<span>${labelLab}</span>${ICON.arrow}</a>`);
+    if (p.homepage) links.push(`<a class="faculty-link-btn" href="${p.homepage}" target="_blank" rel="noopener">${ICON.globe}<span>${labelHome}</span>${ICON.arrow}</a>`);
+    if (p.project)  links.push(`<a class="faculty-link-btn faculty-link-project" href="${p.project}" target="_blank" rel="noopener">${ICON.book}<span>${labelProj}</span>${ICON.arrow}</a>`);
     const linksBlock = links.length ? `<div class="faculty-links">${links.join("")}</div>` : "";
 
-    const office = p.office ? `<div class="faculty-meta-row">${ICON.office}<span>Office：${p.office}</span></div>` : "";
-    const lab    = p.lab    ? `<div class="faculty-meta-row">${ICON.lab}<span>Lab：${p.lab}</span></div>` : "";
-    const mail   = p.email  ? `<div class="faculty-meta-row">${ICON.mail}<a href="mailto:${p.email}">${p.email}</a></div>` : "";
+    const officeText = en ? p.officeEn : p.office;
+    const labText    = en ? p.labLocEn : p.lab;
+    const research   = en ? p.researchEn : p.research;
+    const titleText  = en ? p.titleEn : p.title;
+    const primaryName = en ? p.nameEn : p.nameZh;
+    const secondaryName = en ? p.nameZh : p.nameEn;
+
+    const office = officeText ? `<div class="faculty-meta-row">${ICON.office}<span>${labelOffice}${officeText}</span></div>` : "";
+    const lab    = labText    ? `<div class="faculty-meta-row">${ICON.lab}<span>${labelLabLoc}${labText}</span></div>` : "";
+    const mail   = p.email    ? `<div class="faculty-meta-row">${ICON.mail}<a href="mailto:${p.email}">${p.email}</a></div>` : "";
 
     return `
-      <article class="faculty-card reveal">
+      <article class="faculty-card reveal is-visible">
         <div class="faculty-photo-wrap">
           ${photoBlock}
-          <span class="faculty-title-tag">${p.title}</span>
+          <span class="faculty-title-tag">${titleText}</span>
         </div>
         <div class="faculty-info">
           <div class="faculty-name">
-            <span class="faculty-name-zh">${p.nameZh}</span>
-            <span class="faculty-name-en">${p.nameEn}</span>
+            <span class="faculty-name-zh">${primaryName}</span>
+            <span class="faculty-name-en">${secondaryName}</span>
           </div>
-          <p class="faculty-research">${p.research}</p>
+          <p class="faculty-research">${research}</p>
           <div class="faculty-meta">
             ${office}${lab}${mail}
           </div>
@@ -190,38 +277,49 @@ function setupMobileMenu() {
   const btn = document.getElementById("menuToggle");
   if (!header || !btn) return;
   btn.addEventListener("click", () => header.classList.toggle("menu-open"));
-  // 點擊選單連結後自動關閉
   header.querySelectorAll(".nav a").forEach(a =>
     a.addEventListener("click", () => header.classList.remove("menu-open"))
   );
 }
 
-// ---------- Language toggle (placeholder) ----------
-// 目前只切換按鈕顯示，實際翻譯內容待中文版定稿後再加入
+// ---------- Language toggle ----------
+// 元素若有 data-i18n-en 屬性，內容會在中/英之間切換；
+// 首次切換時自動快取原始中文 (data-i18n-zh)，之後可雙向切換。
+function applyLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
+
+  document.querySelectorAll("[data-i18n-en]").forEach(el => {
+    if (!el.dataset.i18nZh) {
+      el.dataset.i18nZh = el.innerHTML;  // cache
+    }
+    el.innerHTML = lang === "en" ? el.dataset.i18nEn : el.dataset.i18nZh;
+  });
+
+  // 切換按鈕顯示
+  const btn = document.getElementById("langToggle");
+  if (btn) {
+    const cur = btn.querySelector(".lang-current");
+    const oth = btn.querySelector(".lang-other");
+    if (lang === "en") { cur.textContent = "EN"; oth.textContent = "中"; }
+    else               { cur.textContent = "中";  oth.textContent = "EN"; }
+  }
+
+  // 重新渲染教授卡片
+  renderFaculty();
+}
+
 function setupLangToggle() {
   const btn = document.getElementById("langToggle");
   if (!btn) return;
-  let isEN = false;
   btn.addEventListener("click", () => {
-    isEN = !isEN;
-    const cur = btn.querySelector(".lang-current");
-    const oth = btn.querySelector(".lang-other");
-    if (isEN) { cur.textContent = "EN"; oth.textContent = "中"; }
-    else      { cur.textContent = "中";  oth.textContent = "EN"; }
-    // TODO: 待中文內容定稿後串接 i18n
-    console.log("[i18n] toggle to", isEN ? "EN" : "ZH", "(尚未實作翻譯)");
+    applyLang(currentLang === "en" ? "zh" : "en");
   });
 }
 
-// ---------- Footer year ----------
-function setupYear() {
-  const el = document.getElementById("year");
-  if (el) el.textContent = new Date().getFullYear();
-}
-
-// ---------- Scroll reveal (元素進入視窗時浮起淡入) ----------
+// ---------- Scroll reveal ----------
 function setupScrollReveal() {
-  const items = document.querySelectorAll(".reveal");
+  const items = document.querySelectorAll(".reveal:not(.is-visible)");
   if (!("IntersectionObserver" in window)) {
     items.forEach(el => el.classList.add("is-visible"));
     return;
@@ -269,6 +367,12 @@ function setupNavHighlight() {
     });
   }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
   sections.forEach(s => io.observe(s));
+}
+
+// ---------- Footer year ----------
+function setupYear() {
+  const el = document.getElementById("year");
+  if (el) el.textContent = new Date().getFullYear();
 }
 
 // ---------- Boot ----------
