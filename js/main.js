@@ -74,7 +74,7 @@ const FACULTY = [
     lab:      "明達館 531 室",       labLocEn: "Ming-Da Building, Rm. 531",
     photo: "images/jjding.jpg",
     labUrl: "https://disp.ee.ntu.edu.tw/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=942019&p=3",
-    project: "https://www.notion.so/ntueesaad/f6a1ae66c6e24fb6b0dea3c90091da3a"
+    project: "https://ntueesaad.notion.site/3990d0912cad802ea5b3f604e2ac1c8a?v=c500d0912cad83d6b1a10808853fe367&p=ca00d0912cad834cb47e015898647bde&pm=s"
   },
   {
     nameZh: "王奕翔", nameEn: "I-Hsiang Wang",
