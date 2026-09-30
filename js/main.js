@@ -44,8 +44,8 @@ const FACULTY = [
     nameZh: "謝宏昀", nameEn: "Hung-Yun Hsieh",
     title: "教授", titleEn: "Professor",
     email: "hungyun@ntu.edu.tw",
-    research:   "物聯網、車載通訊網路、網路科學與資訊安全",
-    researchEn: "Internet of Things, Vehicular Communication Networks, Network Science and Information Security",
+    research:   "無線感測、物聯網、元宇宙、行動通訊、整合感測與通訊技術",
+    researchEn: "Wireless Sensing, Internet of Things, Metaverse, Mobile Communications, Integrated Sensing and Communication",
     office:   "電機二館 546 室",     officeEn: "EE Building No. 2, Rm. 546",
     lab:      "博理館 521 室",       labLocEn: "Barry Lam Hall, Rm. 521",
     photo: "images/hungyun.jpg",
@@ -115,12 +115,12 @@ const FACULTY = [
     nameZh: "蘇柏青", nameEn: "Borching Su",
     title: "副教授", titleEn: "Associate Professor",
     email: "borching@ntu.edu.tw",
-    research:   "通訊系統之信號處理",
-    researchEn: "Signal Processing for Communication Systems",
+    research:   "通訊與感測系統之最佳化信號設計",
+    researchEn: "Optimization-Based Signal Design for Communication and Sensing Systems",
     office:   "明達館 516 室",       officeEn: "Ming-Da Building, Rm. 516",
     lab:      "明達館 530 室",       labLocEn: "Ming-Da Building, Rm. 530",
     photo: "images/borching.jpg",
-    labUrl: "", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901173&p=3"
+    labUrl: "https://borching.github.io/adcsl/", homepage: "https://www.ee.ntu.edu.tw/profile1.php?teacher_id=901173&p=3"
   },
   {
     nameZh: "劉俊麟", nameEn: "Chun-Lin Liu",
